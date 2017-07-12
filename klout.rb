@@ -15,7 +15,5 @@ usernames.each_line do |username|
 		text.delete!("\n")
 		File.open('results.txt', 'a') { |file| file.puts text }
 		sleep 0.2
-	rescue
-		binding.pry
 	end
 end
